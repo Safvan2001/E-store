@@ -1,0 +1,30 @@
+<!-- <p>transaction works!</p> -->
+
+<div class="container text-center w-50 mt-4 p-4 border border-black">
+    <h1 class="" >CART ITEMS</h1>
+    <table class="w-100" style="border: 3px solid  #000000;">
+        <thead>
+           <tr>
+                <th style="border: 3px solid  #000000;">Product Name</th>
+                <th style="border: 3px solid  #000000;">Amount</th>
+           </tr>
+        </thead>
+        <tbody *ngFor="let i of viewcartdeatails">
+            <tr >
+                <td style="border: 3px solid  #000000">{{i.productName}}</td>
+                <td style="border: 3px solid  #000000">{{i.totalPrice}}</td>
+            
+            </tr>
+            
+            
+        </tbody>
+    </table>
+    <br>
+<div>
+    <h4>Total Amount={{Total}} Rs</h4>
+</div>
+</div>
+<br><br>
+<div class="card-footer p-5 pt-0 border-top-0 bg-transparent">
+    <div class="text-center"><button (click)="deleteCartitems()" class="btn btn-outline-dark mt-auto">Buy Now</button></div>
+</div>

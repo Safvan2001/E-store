@@ -1,0 +1,147 @@
+<!-- cards -->
+
+<div class="cards p-3 container-fluid">
+    <div class="row ">
+
+        <div class="card p-2 col-lg-3" style="width: 18rem ;margin-left: 30px;">
+            <img src="assets/img/Orange.jpg" class="card-img-top" alt="...">
+            <div class="card-body ">
+                <h5 class="card-title">ORANGE</h5>
+                <p class="card-text">Price : 60</p>
+                <form class=""  [formGroup]="cartForm">
+                    <div class="container w-100 text-white ">
+                        <input formControlName="quantity" name="q1" id="q1" type="number" placeholder="quantity">
+
+                    </div>
+                </form>
+                <br><br><br>
+                <button (click)="addtocart('ORANGE',60)" class="btn btn-success">Add to Cart</button>
+            </div>
+        </div>
+        <div class="card col-lg-3" style="width: 18rem;margin-left: 30px;">
+            <img src="assets/img/Apple.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h4 class="card-title">APPLE</h4>
+
+                <p class="card-text">Price : 150</p>
+                <form [formGroup]="cartForm" class="">
+                    <div class="container w-100 text-white ">
+                        <input type="number" formControlName="quantity" name="a2" id="q2" placeholder="quantity">
+
+                    </div>
+                </form>
+                <br>
+                <button (click)="addtocart('APPLE',150)" class="btn btn-success">Add to Cart</button>
+            </div>
+        </div>
+        <div class="card col-lg-3" style="width: 18rem;margin-left: 30px;">
+            <img style="height: 184px;" src="assets/img/Grape.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">GRAPE</h5>
+                <p class="card-text">Price : 90</p>
+                <form [formGroup]="cartForm" class="">
+                    <div class="container w-100 text-white ">
+                        <input type="number" formControlName="quantity" name="a3" id="q3" placeholder="quantity">
+
+                    </div>
+                </form>
+                <br><br>
+                <button (click)="addtocart('GRAPE',90)" class="btn btn-success">Add to Cart</button>
+            </div>
+        </div>
+        <div class="card col-lg-3" style="width: 18rem;margin-left: 30px;">
+            <img src="assets/img/papaya.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">PAPAYA</h5>
+                <p class="card-text">Price : 50</p>
+                <form [formGroup]="cartForm"  class="">
+                    <div class="container w-100 text-white ">
+                        <input type="number" formControlName="quantity" name="a4" id="q4" placeholder="quantity">
+
+                    </div>
+                </form>
+                <br><br><br>
+
+                <button (click)="addtocart('PAPAYA',50)" class="btn btn-success">Add to Cart</button>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="cards p-3 container-fluid">
+
+    <div class="row ">
+
+        <div class="card p-2 col-lg-3" style="width: 18rem ;margin-left: 30px;">
+            <img style="height: 150px;" src="assets/img/Pome.jpg" class="card-img-top" alt="...">
+            <div class="card-body ">
+                <h5 class="card-title">POMEGRANATE</h5>
+                <p class="card-text">Price : 160</p>
+                <form [formGroup]="cartForm" class="">
+                    <div class="container w-100 text-white ">
+                        <input type="number" formControlName="quantity" name="a5" id="q5" placeholder="quantity">
+
+                    </div>
+                </form>
+                <br><br><br>
+                <button (click)="addtocart('POMEGRANATE',160)" class="btn btn-success">Add to Cart</button>
+            </div>
+        </div>
+        <div class="card col-lg-3" style="width: 18rem;margin-left: 30px;">
+            <img src="assets/img/Banana.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">BANANA</h5>
+
+                <p class="card-text">Price : 70</p>
+                <form [formGroup]="cartForm" class="">
+                    <div class="container w-100 text-white ">
+                        <input type="number" formControlName="quantity" name="a6" id="q6" placeholder="quantity">
+
+                    </div>
+                </form>
+                <br>
+                <button (click)="addtocart('BANANA',70)" class="btn btn-success">Add to Cart</button>
+            </div>
+        </div>
+        <div class="card col-lg-3" style="width: 18rem;margin-left: 30px;">
+            <img style="height: 184px;" src="assets/img/watermelon.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">WATERMELON</h5>
+                <p class="card-text">Price : 25</p>
+                <form [formGroup]="cartForm" class="">
+                    <div class="container w-100 text-white ">
+                        <input type="number" formControlName="quantity" name="a7" id="q7" placeholder="quantity">
+
+                    </div>
+                </form>
+                <br>
+                <button (click)="addtocart('WATERMELON',25)" class="btn btn-success">Add to Cart</button>
+            </div>
+        </div>
+        <div class="card col-lg-3 " style="width: 18rem;margin-left: 30px;">
+            <img src="assets/img/Mango.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">MANGO</h5>
+                <p class="card-text">Price : 60</p>
+                <form [formGroup]="cartForm" class="">
+                    <div class="container w-100 text-white ">
+                        <input type="number" formControlName="quantity" name="a8" id="q2" placeholder="quantity">
+
+                    </div>
+                </form>
+                <br><br>
+                <button (click)="addtocart('MANGO',60)" class="btn btn-success">Add to Cart</button>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+<div class="card-footer p-5 pt-0 border-top-0 bg-transparent">
+    <div class="text-center"><a routerLink="" class="btn btn-outline-dark mt-auto">View Home Page</a></div>
+</div>
